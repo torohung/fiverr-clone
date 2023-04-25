@@ -1,4 +1,4 @@
-# Company layout
+# Fiverr HTML layout
 > Live demo [_here_](https://fiverr-clone-tawny.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -14,7 +14,7 @@
 
 
 ## Technologies Used
-- With this project, you can explore HTML, CSS
+- With this project, you can explore HTML, CSS (Sass)
 
 ## Contact
 Created by [@torohung](https://github.com/torohung) - feel free to contact me!
