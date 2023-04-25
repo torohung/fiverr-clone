@@ -1,0 +1,43 @@
+.guides {
+    background-color: $color-white-5;
+    
+    position: relative;
+    h2 {
+        @include textStyle($color-black-2, $fs-6, $fw-3);
+        padding-bottom: $pd-1 + 4;
+    }
+    .guides__content {
+        .guides__item {
+            margin-bottom: $mg-3;
+            .guides__img {
+                margin-bottom: $mg-1 + 6;
+                border-radius: $br-1;
+                width: 100%;
+                transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+            p {
+                margin: 0;
+                &.guides__title {
+                    @include textStyle($color-black-2, $fs-2, $fw-3);
+                    padding-bottom: 2px;
+                }
+                &.guides__desc {
+                    color: $color-gray-1;
+                }
+            }
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+@include responsive("sm"){
+    .guides{
+ margin-bottom: $mg-7;
+    }
+}

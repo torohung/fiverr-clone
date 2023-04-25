@@ -1,0 +1,60 @@
+.trustby__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 0 $pd-3+8;
+    height: 70px;
+    p {
+        margin: 0;
+        @include textStyle($color-gray-3, $fs-1, $fw-2);
+        padding-right: $pd-3+4;
+        display: none;
+        
+    }
+    img{
+        padding-right: $pd-0+6;
+        height: 50px;
+        &:last-of-type{
+            display: none;
+           
+        }
+    }
+}
+
+@include responsive("sm"){
+    .trustby{
+        margin-bottom: $mg-7;
+        .trustby__content{
+            img{
+                padding-right: $pd-1+4;
+                &:last-of-type{
+                    display: block;
+                    padding-right: 0
+                }
+            }
+        }
+    }
+
+}
+@include responsive("md"){
+    .trustby{
+        .trustby__content{
+            img{
+                height: 60px;
+                padding-right: $pd-5;
+            
+            }
+        }
+    }
+}
+@include responsive("lg"){
+    .trustby__content{
+        height: 95px;
+        p{
+            display: block;
+        }
+        
+       
+    }
+}

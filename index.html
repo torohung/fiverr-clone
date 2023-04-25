@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fivver</title>
+
+
+
+    <!-- font Domaine -->
+    <link rel="preload" href="https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2"
+        as="font" crossorigin>
+    <link rel="preload" href="https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2" as="font"
+        crossorigin>
+    <link href="https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap E CSS -->
+    <link href="./css/bootstrap-essentials.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header__wrapper w-100">
+        <div class="header  ">
+            <div class="row max-width-container  ">
+                
+                <div class="col-1 col-sm-1 col-md p-0">
+                    <div class="header__left">
+                        <div class="header__nav__responsive">
+                            <i class="fa fa-bars"></i>
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-10 col-sm-8 col-md-4 p-0">
+                    <div class="header__mid">
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <svg width="89" height="27" viewBox="0 0 89 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fiverr_logo_nav" fill="#fff">
+                                        <path
+                                            d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                                        </path>
+                                    </g>
+                                    <g id="fiverr_logo_nav_dot" fill="#1dbf73">
+                                        <path
+                                            d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="header__search__form">
+                            <div class=" input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="header__search"><i class="fa fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Find Services" aria-label="Username"
+                                    aria-describedby="header__search">
+    
+                                <button class="btn btn-outline-secondary button--green"
+                                    type="button">Search</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="col-1 col-sm-3 col-md-7 p-0 ml-auto">
+                    <div class="header__right">
+                        <nav class="navbar  navbar-expand navbar-light">
+
+                           
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item go--to--business">
+                                        <a class="nav-link " href="#">Fiverr Business</a>
+                                    </li>
+                                    <li class="nav-item resources--tab">
+                                        <a class="nav-link " href="#">Explore</a>
+                                    </li>
+                                    <li class="nav-item dropdown locale--settings">
+                                        <a class="nav-link dropdown-toggle " href="#" id="navbarLanguage" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span><svg class="icon--globe" viewBox="0 0 18 18"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 1C4.58875 1 1 4.58875 1 9C1 13.4113 4.58875 17 9 17C13.4113 17 17 13.4113 17 9C17 4.58875 13.4113 1 9 1ZM8.53125 4.92676C7.81812 4.89612 7.11218 4.7959 6.43811 4.63293C6.54578 4.37781 6.6626 4.13281 6.78857 3.90063C7.30542 2.94824 7.93994 2.27991 8.53125 2.03784V4.92676ZM8.53125 5.86499V8.53125H5.60339C5.64465 7.4906 5.82202 6.45752 6.11536 5.51782C6.8927 5.71362 7.70874 5.83215 8.53125 5.86499ZM8.53125 9.46875V12.135C7.70874 12.1678 6.8927 12.2864 6.11536 12.4822C5.82202 11.5425 5.64465 10.5094 5.60339 9.46875H8.53125ZM8.53125 13.0732V15.9622C7.93994 15.7201 7.30542 15.0518 6.78857 14.0994C6.6626 13.8672 6.54578 13.6222 6.43811 13.3671C7.11218 13.2041 7.81799 13.1039 8.53125 13.0732ZM9.46875 13.0732C10.1819 13.1039 10.8878 13.2041 11.5619 13.3671C11.4542 13.6222 11.3374 13.8672 11.2114 14.0994C10.6946 15.0518 10.0601 15.7201 9.46875 15.9622V13.0732ZM9.46875 12.135V9.46875H12.3966C12.3553 10.5094 12.178 11.5425 11.8846 12.4822C11.1073 12.2864 10.2913 12.1678 9.46875 12.135ZM9.46875 8.53125V5.86499C10.2913 5.83215 11.1073 5.71362 11.8846 5.51782C12.178 6.45752 12.3553 7.4906 12.3966 8.53125H9.46875ZM9.46875 4.92676V2.03784C10.0601 2.27991 10.6946 2.94824 11.2114 3.90063C11.3374 4.13281 11.4542 4.37781 11.5619 4.63293C10.8878 4.7959 10.1819 4.89612 9.46875 4.92676ZM12.0354 3.45349C11.8007 3.02087 11.5457 2.63953 11.2769 2.31421C12.2141 2.63428 13.0631 3.14636 13.7771 3.8031C13.3699 4.02124 12.931 4.21069 12.4694 4.36902C12.3384 4.0509 12.1936 3.74487 12.0354 3.45349ZM5.9646 3.45349C5.8064 3.74487 5.66162 4.0509 5.53064 4.36902C5.06897 4.21069 4.63013 4.02112 4.2229 3.8031C4.93689 3.14636 5.78589 2.63428 6.72314 2.31421C6.45435 2.63953 6.19946 3.02075 5.9646 3.45349ZM5.2135 5.25012C4.89355 6.27368 4.70544 7.38953 4.66492 8.53125H1.95349C2.05383 7.00769 2.63892 5.61438 3.5564 4.50525C4.06555 4.79724 4.62317 5.047 5.2135 5.25012ZM4.66492 9.46875C4.70544 10.6106 4.89355 11.7263 5.2135 12.7499C4.62317 12.953 4.06555 13.2028 3.5564 13.4948C2.63892 12.3856 2.05383 10.9923 1.95349 9.46875H4.66492ZM5.53064 13.631C5.66162 13.9491 5.8064 14.2551 5.9646 14.5465C6.19946 14.9791 6.45435 15.3605 6.72314 15.6858C5.78589 15.3657 4.93689 14.8536 4.22302 14.1969C4.63 13.9789 5.06897 13.7893 5.53064 13.631ZM12.0354 14.5465C12.1936 14.2551 12.3384 13.9491 12.4694 13.631C12.931 13.7893 13.3699 13.9789 13.7771 14.1969C13.0631 14.8536 12.2141 15.3657 11.2769 15.6858C11.5457 15.3605 11.8005 14.9792 12.0354 14.5465ZM12.7865 12.7499C13.1064 11.7263 13.2946 10.6105 13.3351 9.46875H16.0465C15.9462 10.9923 15.3611 12.3856 14.4436 13.4948C13.9344 13.2028 13.3768 12.953 12.7865 12.7499ZM13.3351 8.53125C13.2946 7.3894 13.1064 6.27368 12.7865 5.25012C13.3768 5.047 13.9344 4.79724 14.4436 4.50525C15.3611 5.61438 15.9462 7.00769 16.0465 8.53125H13.3351Z"
+                                                        stroke-width="0.2"></path>
+                                                </svg></span>
+                                            English
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarLanguage">
+                                            <a class="dropdown-item icon--selected" href="#"><span
+                                                    class="icon--check"><i class="fa fa-check"></i></span>English</a>
+                                            <a class="dropdown-item item--row" href="#">Deutsch</a>
+                                            <a class="dropdown-item item--row" href="#">Español</a>
+                                            <a class="dropdown-item item--row" href="#">Français</a>
+                                            <a class="dropdown-item item--row" href="#">Português</a>
+                                            <a class="dropdown-item item--row" href="#">Italiano</a>
+                                            <a class="dropdown-item item--row" href="#">Nederlands</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown locale--settings">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarCurrency" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            $USD
+                                        </a>
+                                        <div class="dropdown-menu scrollable--menu" aria-labelledby="navbarCurrency">
+                                            <a class="dropdown-item icon--selected" href="#"><span
+                                                    class="icon--check"><i class="fa fa-check"></i></span>United States
+                                                Dollar (USD) - $</a>
+                                            <a class="dropdown-item item--row" href="#">Euro (EUR) - €</a>
+                                            <a class="dropdown-item item--row" href="#">British Pound (GBP) - £</a>
+                                            <a class="dropdown-item item--row" href="#">Australian Dollar (AUD) - A$</a>
+                                            <a class="dropdown-item item--row" href="#">Canadian Dollar (CAD) - C$</a>
+                                            <a class="dropdown-item item--row" href="#">Israeli Shekel (ILS) - ₪</a>
+                                            <a class="dropdown-item item--row" href="#">Brazilian Real (BRL) - R$</a>
+                                            <a class="dropdown-item item--row" href="#">Hong Kong Dollar (HKD) - HK$</a>
+                                            <a class="dropdown-item item--row" href="#">Swedish Krona (SEK) - kr</a>
+                                            <a class="dropdown-item item--row" href="#">New Zealand Dollar (NZD) -
+                                                NZ$</a>
+                                            <a class="dropdown-item item--row" href="#">Singapore Dollar (SGD) - S$</a>
+                                            <a class="dropdown-item item--row" href="#">Swiss Franc (CHF) - CHF</a>
+                                            <a class="dropdown-item item--row" href="#">South African Rand (ZAR) - R</a>
+                                            <a class="dropdown-item item--row" href="#">Chinese Renminbi Yuan (CNY) -
+                                                ¥</a>
+                                            <a class="dropdown-item item--row" href="#">Indian Rupee (INR) - ₹</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item header--start--selling">
+                                        <a class="nav-link " href="#">Become a Seller</a>
+                                    </li>
+                                    <li class="nav-item header--login">
+                                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signInModal">Sign
+                                            In</a>
+
+
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link header__join" data-toggle="modal"
+                                            data-target="#joinModal">Join</a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header__categories">
+            <div class="row max-width-container ">
+                <div class="col-12  p-0">
+                    <div class="header__categories__menu">
+                        <ul>
+                            <li><a href="#">Graphics & Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Writing & Translation</a></li>
+                            <li><a href="#">Video & Animation</a></li>
+                            <li><a href="#">Music & Audio</a></li>
+                            <li><a href="#">Programming & Tech</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Industries</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <!-- CASOUSEL -->
+    <section class="carousel__fiverr">
+        <div id="carouselSeller" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="carousel__img carousel--img1"></div>
+                    <div class="carousel__sellerName ">
+                        <div class="max-width-container d-flex justify-content-end">
+                            <p>Andrea, <b>Fashion Designer</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="carousel__img carousel--img2"></div>
+                    <div class="carousel__sellerName  show-stars">
+                        <div class="max-width-container d-flex justify-content-end">
+                            <p>Moon, <b>Marketing Expert</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel__img carousel--img3"></div>
+                    <div class="carousel__sellerName">
+                        <div class="max-width-container d-flex justify-content-end">
+                            <p>Ritika, <b>Shoemaker and Designer</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel__img carousel--img4"></div>
+                    <div class="carousel__sellerName">
+                        <div class="max-width-container d-flex justify-content-end">
+                            <p>Zach, <b>Bar Owner</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel__img carousel--img5"></div>
+                    <div class="carousel__sellerName show-stars">
+                        <div class="max-width-container d-flex justify-content-end">
+                            <p>Gabrielle, <b>Video Editor</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="carousel__header w-100 ">
+            <div class="max-width-container">
+                <div class="carousel__textContent">
+                    <h1><span>Find the perfect <i>freelance</i> services for your business</span></h1>
+                    <div class="carousel__form">
+                        <div class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Try &quot;Building mobile app&quot; "
+                                aria-label="Username" aria-describedby="addon-wrapping">
+
+                        </div>
+                        <button class="btn btn-outline-secondary button--green" type="button">Search</button>
+                    </div>
+
+
+                    <div class="popular">
+                        Popular:
+                        <ul>
+                            <li><a href="#" class="text-body-2">Web and Mobile Design</a></li>
+                            <li><a href="#" class="text-body-2">WordPress</a></li>
+                            <li><a href="#" class="text-body-2">Logo Design</a></li>
+                            <li><a href="#" class="text-body-2">Dropshipping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- TRUST BY -->
+    <section class="trustby">
+        <div class="trustby__content max-width-container">
+            <p>Trusted by:</p>
+            <img src="./img/facebook.31d5f92.png" alt="">
+            <img src="./img/google.517da09.png" alt="">
+            <img src="./img/netflix.e3ad953.png" alt="">
+            <img src="./img/pandg.8b7310b.png" alt="">
+            <img src="./img/paypal.ec56157.png" alt="">
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="serviceSection max-width-container">
+        <div class="service__content">
+            <h2>Popular professional services</h2>
+            <div class="owl-carousel owl-theme service__carousel">
+                <div class="item">
+                    <img src="./img/logo-design-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Build your brand</p>
+                        <p class="service__title">Logo Design</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/wordpress-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Customize your site</p>
+                        <p class="service__title">WordPress</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/voiceover-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Share your message</p>
+                        <p class="service__title">Voice Over</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/animated-explainer-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Engage your audience</p>
+                        <p class="service__title">Video Explainer</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/social-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Reach more customers</p>
+                        <p class="service__title">Social Media</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/seo-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Unlock growth online</p>
+                        <p class="service__title">SEO</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/illustration-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Color your dreams</p>
+                        <p class="service__title">Illustration</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./img/translation-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Go global</p>
+                        <p class="service__title">Translation</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/data-entry-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Learn your business</p>
+                        <p class="service__title">Data Entry</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/book-covers-2x.jpg" alt="">
+                    <div class="service__text">
+                        <p class="service__subTitle">Showcase your story</p>
+                        <p class="service__title">Book Covers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELLING PROPOSITION -->
+    <section class="selling max-width-container">
+        <div class="row selling__content ">
+            <div class="col-12 col-md-6 p-0">
+                <div class="selling__left">
+                    <h2>A whole world of freelance talent at your fingertips</h2>
+                    <div class="selling__item">
+                        <h6><i class="far fa-check-circle"></i>The best for every budget</h6>
+                        <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.
+                        </p>
+
+                    </div>
+                    <div class="selling__item">
+                        <h6><i class="far fa-check-circle"></i>Quality work done quickly</h6>
+                        <p>Find the right freelancer to begin working on your project within minutes.</p>
+                    </div>
+                    <div class="selling__item">
+                        <h6><i class="far fa-check-circle"></i>Protected payments, every time</h6>
+                        <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.
+                        </p>
+                    </div>
+                    <div class="selling__item">
+                        <h6><i class="far fa-check-circle"></i>24/7 support</h6>
+                        <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-0">
+                <a href="#" data-toggle="modal" data-target="#sellingModal">
+                    <div class="selling__right picture--wrapper ">
+                        <img src=" ./img/selling-proposition-still-1400-x1.png" alt="">
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MARKETPLACE -->
+    <section class="marketplace max-width-container">
+        <div class="marketplace__content">
+            <h2>Explore the marketplace</h2>
+            <ul class="marketplace__categories">
+                <li><a href="#"><img src="./img/graphics-design.d32a2f8.svg" alt="">Graphics & Design</a></li>
+                <li><a href="#"><img src="./img/online-marketing.74e221b.svg" alt="">Graphics & Design</a></li>
+                <li><a href="#"><img src="./img/writing-translation.32ebe2e.svg" alt="">Writing & Translation</a></li>
+                <li><a href="#"><img src="./img/video-animation.f0d9d71.svg" alt="">Writing & Translation</a></li>
+                <li><a href="#"><img src="./img/music-audio.320af20.svg" alt="">Music & Audio</a></li>
+                <li><a href="#"><img src="./img/programming.9362366.svg" alt="">Programming & Tech</a></li>
+                <li><a href="#"><img src="./img/business.bbdf319.svg" alt="">Business</a></li>
+                <li><a href="#"><img src="./img/lifestyle.745b575.svg" alt="">Lifestyle</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FIVERR BUSINESS -->
+    <section class="business">
+        <div class="row business__content max-width-container">
+            <div class="col-12 col-sm-6">
+                <div class="business__left">
+                    <div class="text--logomaker1">fivver<span class="text--logomaker2">business.</span> <span
+                            class="text--upper">NEW</span>
+                    </div>
+                    <h2>A business solution designed for <i class="font--domaine">teams</i></h2>
+                    <p class="business--text3">Upgrade to a curated experience packed with tools and benefits,
+                        dedicated to businesses</p>
+                    <div class="business__item">
+                        <p><i class="far fa-check-circle"></i>Connect to freelancers with proven business experience</p>
+                        <p><i class="far fa-check-circle"></i>Get matched with the perfect talent by a customer success
+                            manager</p>
+                        <p><i class="far fa-check-circle"></i>Manage teamwork and boost productivity with one powerful
+                            workspace</p>
+                    </div>
+                    <button type="button" class="btn button--green">Explore Fiverr Business</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="business__right">
+                    <img src="./img/business-desktop-870-x1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="feedback max-width-container">
+        <div class="feedback__content">
+            <div class="owl-carousel owl-theme feedback__carousel">
+                <div class="row feedback__item">
+                    <div class="col-12 col-md-6 col-lg-5 ">
+                        <div class="feedback__itemLeft">
+                            <a href="#" data-toggle="modal" data-target="#feedbackModal1">
+                                <div class="picture--wrapper">
+                                    <img src="./img/testimonial-video-still-rooted.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <div class="feedback__itemRight">
+                            <div class="feedback__author">
+                                <span class="feedback__authorName">Kay Kim, Co-Founder</span>
+                                <img class="feedback__companyLogo" src="./img/rooted-logo-x2.321d79d.png"
+                                    alt="Feedback 1">
+                            </div>
+                            <blockquote class="feedback_quote">
+                                <i>
+                                    "It's extremely exciting that Fiverr has freelancers from all over the world — it
+                                    broadens the talent pool. One of the best things about Fiverr is that while we're
+                                    sleeping, someone's working."
+                                </i>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row feedback__item">
+                    <div class="col-12 col-md-6  col-lg-5">
+                        <div class="feedback__itemLeft">
+                            <a href="#" data-toggle="modal" data-target="#feedbackModal2">
+                                <div class="picture--wrapper">
+                                    <img src="./img/testimonial-video-still-lavender.jpg" alt="">
+                                </div>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <div class="feedback__itemRight">
+                            <div class="feedback__author">
+                                <span class="feedback__authorName">Brighid Gannon (DNP, PMHNP-BC), Co-Founder</span>
+                                <img class="feedback__companyLogo" src="./img/lavender-logo-x2.89c5e2e.png"
+                                    alt="Feedback 2">
+                            </div>
+                            <blockquote class="feedback_quote">
+                                <i>
+                                    "We used Fiverr for SEO, our logo, website, copy, animated videos — literally
+                                    everything. It was like working with a human right next to you versus being across
+                                    the world."
+                                </i>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row feedback__item">
+                    <div class="col-12 col-md-6  col-lg-5">
+                        <div class="feedback__itemLeft">
+                            <a href="#" data-toggle="modal" data-target="#feedbackModal3">
+                                <div class="picture--wrapper">
+                                    <img src="./img/testimonial-video-still-naadam.jpg" alt="">
+                                </div>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <div class="feedback__itemRight">
+                            <div class="feedback__author">
+                                <span class="feedback__authorName">Caitlin Tormey, Chief Commercial Officer</span>
+                                <img class="feedback__companyLogo" src="./img/naadam-logo-x2.0a3b198.png"
+                                    alt="Feedback 3">
+                            </div>
+                            <blockquote class="feedback_quote">
+                                <i>
+                                    "We've used Fiverr for Shopify web development, graphic design, and backend web
+                                    development. Working with Fiverr makes my job a little easier every day."
+                                </i>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO MAKER -->
+    <section class="logomaker max-width-container">
+        <div class="logomaker__content">
+            <div class="logomaker__desc">
+                <div class="text--logomaker1">fivver<span class="text--logomaker2">logomaker.</span> <span
+                        class="text--upper">BETA</span>
+                </div>
+                <h2>Make an incredible logo<br><i class="font--domaine">in minutes</i></h2>
+                <p>Pre-designed by top talent. Just add your touch.</p>
+                <button class="btn button--white" type="button">Try Fiverr Logo Maker</button>
+            </div>
+            <img class="logomaker__img__552" src="./img/logo-maker-banner-mobile-552-2x.png" alt="">
+            <img class="logomaker__img__852" src="./img/logo-maker-banner-tablet-852-2x.png" alt="">
+            <div class="logomaker__img">
+                <img src="./img/logo-maker-banner-wide-desktop-1352-2x.png" alt="">
+            </div>
+           
+           
+
+        </div>
+    </section>
+
+    <!-- FIVERR PROJECT  -->
+    <section class="project max-width-container">
+        <div class="project__content">
+            <h2>Get inspired with projects made by our freelancers</h2>
+            <div class="owl-carousel owl-theme project__carousel">
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/designerheather.jpg" alt="project__img1"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/heather-profile.jpg" alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Brochure Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by designerheather</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/dvincentgomes.jpg" alt="project__img2"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/c675e6f4-303e-4fab-9854-314669dda095.jpg"
+                                alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Illustration</p>
+                            </a>
+                            <a href="#">
+                                <p>dvincentgomes</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/artsi3d.jpg" alt="project__img3"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/f601e668-0887-4bf6-be52-ff28be45a1e3.jpg"
+                                alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">3D Models & Product Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by artsi3d</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/vnuggz.jpg" alt="project__img4"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/heather-profile.jpg" alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Book & Album Covers</p>
+                            </a>
+                            <a href="#">
+                                <p>by vnuggz</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/paudmartins.jpg" alt="project__img5"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/fbdb107c-8a61-4de2-af23-292186430a6e.jpg"
+                                alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Web & Mobile Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by paudmartins</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/niccoffman.jpg" alt="project__img6"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/240455e2-78d2-4574-8584-04716fb9d6d9.jpg"
+                                alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Logo Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by niccoffman</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/evelinaro.jpg" alt="project__img7"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/File_000.jpeg" alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Logo Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by evelinaro</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img class="project__img" src="./img/spickex.jpg" alt="project__img8"></a>
+                    <div class="project__info">
+                        <a href="#"><img class="project__avata" src="./img/00311c54-bbf7-41eb-b6e1-1ba71110db75.jpg"
+                                alt=""></a>
+                        <div class="project__seller">
+                            <a href="#">
+                                <p class="font-weight-bold">Flyer Design</p>
+                            </a>
+                            <a href="#">
+                                <p>by spickex</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <a class="see--more--link" href="#">See More Projects <i class="fa fa-chevron-right"></i></a>
+        </div>
+
+    </section>
+    <!-- FIVERR  GUIDES -->
+    <section class="guides max-width-container">
+        <h2>Fiverr guides</h2>
+        <div class="row guides__content">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="guides__item">
+                    <a href="#">
+                        <img class="guides__img" src="./img/guide-start-online-business-552-x2.png" alt="">
+                        <p class="guides__title">Start an online business and work from home</p>
+                        <p class="guides__desc">A complete guide to starting a small business online</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="guides__item">
+                    <a href="#">
+                        <img class="guides__img" src="./img/guide-digital-marketing-552-x2.png" alt="">
+                        <p class="guides__title">Digital marketing made easy</p>
+                        <p class="guides__desc">A practical guide to understand what is digital marketing</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="guides__item">
+                    <a href="#">
+                        <img class="guides__img" src="./img/guide-start-online-business-552-x2.png" alt="">
+                        <p class="guides__title">Create a logo for your business</p>
+                        <p class="guides__desc">A step-by-step guide to create a memorable business logo</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <a class="see--more--link" href="#">See More Guides <i class="fa fa-chevron-right"></i></a>
+    </section>
+
+    <!-- BANNER SIGNUP -->
+    <section class="bannerSignUp max-width-container">
+        <div class="bannerSignUp__content">
+
+            <div class="bannerSignUp__text">
+                <h2><span>Find the <i class="font--domaine">talent</i> needed to get your business <i
+                            class="font--domaine">growing</i>.</span></h2>
+                <button type="button" class="btn button--green">Get Started</button>
+            </div>
+            <img class="bannerSignUp__img" src="./img/bg-signup-1160-x1.png" alt="">
+            <img class="bannerSignUp__img2" src="./img/bg-signup-1400-x1.png" alt="">
+        </div>
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer max-width-container">
+        <div class="footer__top">
+                <div class="footer__item">
+                    <a class="titel" href="#">Categories <i class="fa fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Graphics &amp; Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Writing &amp; Translation</a></li>
+                        <li><a href="#">Video &amp; Animation</a></li>
+                        <li><a href="#">Music &amp; Audio</a></li>
+                        <li><a href="#">Programming &amp; Tech</a></li>
+                        <li><a href="#">Data</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <a class="titel" href="#">About <i class="fa fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press &amp; News</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Intellectual Property Claims</a></li>
+                        <li><a href="#" target="_blank">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <a class="titel" href="#">Support <i class="fa fa-chevron-down"></i></a>
+                    
+                    <ul>
+                        <li><a href="">Help &amp; Support</a></li>
+                        <li><a href="">Trust &amp; Safety</a></li>
+                        <li><a href="">Selling on Fiverr</a></li>
+                        <li><a href="">Buying on Fiverr</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <a class="titel" href="#">Community <i class="fa fa-chevron-down"></i></a>
+                
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Community Standards</a></li>
+                        <li><a href="#">Podcast</a> </li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Invite a Friend</a></li>
+                        <li><a href="#">Become a Seller</a></li>
+                        <li><a href="#">Fiverr Elevate<small>Exclusive Benefits</small></a></li>
+                    </ul>
+
+                </div>
+                <div class="footer__item">
+                    <a class="titel" href="#">More From Fiverr <i class="fa fa-chevron-down"></i></a>
+                
+                    <ul>
+                        <li><a href="#">Fiverr Business</a></li>
+                        <li><a href="#">Fiverr Pro</a></li>
+                        <li><a href="#">Fiverr Studios</a></li>
+                        <li><a href="#">Fiverr Logo Maker</a></li>
+                        <li><a href="#">Fiverr Guides</a></li>
+                        <li><a href="#">Get Inspired</a></li>
+                        <li><a href="#">ClearVoice<small>Content Marketing</small></a></li>
+                        <li><a href="#">AND CO<small>Invoice Software</small></a></li>
+                        <li><a href="#">Learn<small>Online Courses</small></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer__bottom">
+
+
+            <div class="footer__bottom__left">
+                <span class="footer__logo">
+                    <svg width="91" height="27" viewBox="0 0 91 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#7A7D85">
+                            <path
+                                d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z">
+                            </path>
+                        </g>
+                        <g fill="#7A7D85">
+                            <path
+                                d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z">
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                <p class="footer__copyright">
+                    <span>© Fiverr International Ltd. 2021</span>
+                </p>
+
+            </div>
+
+
+            <div class="footer__bottom__right">
+                <div class="footer__icon">
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+
+                <div class="footer__bottom__link">
+                    <a href="#" data-toggle="modal" data-target="#footerLanguage">
+                        <span>
+                            <svg class="icon--globe--footer" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 1C4.58875 1 1 4.58875 1 9C1 13.4113 4.58875 17 9 17C13.4113 17 17 13.4113 17 9C17 4.58875 13.4113 1 9 1ZM8.53125 4.92676C7.81812 4.89612 7.11218 4.7959 6.43811 4.63293C6.54578 4.37781 6.6626 4.13281 6.78857 3.90063C7.30542 2.94824 7.93994 2.27991 8.53125 2.03784V4.92676ZM8.53125 5.86499V8.53125H5.60339C5.64465 7.4906 5.82202 6.45752 6.11536 5.51782C6.8927 5.71362 7.70874 5.83215 8.53125 5.86499ZM8.53125 9.46875V12.135C7.70874 12.1678 6.8927 12.2864 6.11536 12.4822C5.82202 11.5425 5.64465 10.5094 5.60339 9.46875H8.53125ZM8.53125 13.0732V15.9622C7.93994 15.7201 7.30542 15.0518 6.78857 14.0994C6.6626 13.8672 6.54578 13.6222 6.43811 13.3671C7.11218 13.2041 7.81799 13.1039 8.53125 13.0732ZM9.46875 13.0732C10.1819 13.1039 10.8878 13.2041 11.5619 13.3671C11.4542 13.6222 11.3374 13.8672 11.2114 14.0994C10.6946 15.0518 10.0601 15.7201 9.46875 15.9622V13.0732ZM9.46875 12.135V9.46875H12.3966C12.3553 10.5094 12.178 11.5425 11.8846 12.4822C11.1073 12.2864 10.2913 12.1678 9.46875 12.135ZM9.46875 8.53125V5.86499C10.2913 5.83215 11.1073 5.71362 11.8846 5.51782C12.178 6.45752 12.3553 7.4906 12.3966 8.53125H9.46875ZM9.46875 4.92676V2.03784C10.0601 2.27991 10.6946 2.94824 11.2114 3.90063C11.3374 4.13281 11.4542 4.37781 11.5619 4.63293C10.8878 4.7959 10.1819 4.89612 9.46875 4.92676ZM12.0354 3.45349C11.8007 3.02087 11.5457 2.63953 11.2769 2.31421C12.2141 2.63428 13.0631 3.14636 13.7771 3.8031C13.3699 4.02124 12.931 4.21069 12.4694 4.36902C12.3384 4.0509 12.1936 3.74487 12.0354 3.45349ZM5.9646 3.45349C5.8064 3.74487 5.66162 4.0509 5.53064 4.36902C5.06897 4.21069 4.63013 4.02112 4.2229 3.8031C4.93689 3.14636 5.78589 2.63428 6.72314 2.31421C6.45435 2.63953 6.19946 3.02075 5.9646 3.45349ZM5.2135 5.25012C4.89355 6.27368 4.70544 7.38953 4.66492 8.53125H1.95349C2.05383 7.00769 2.63892 5.61438 3.5564 4.50525C4.06555 4.79724 4.62317 5.047 5.2135 5.25012ZM4.66492 9.46875C4.70544 10.6106 4.89355 11.7263 5.2135 12.7499C4.62317 12.953 4.06555 13.2028 3.5564 13.4948C2.63892 12.3856 2.05383 10.9923 1.95349 9.46875H4.66492ZM5.53064 13.631C5.66162 13.9491 5.8064 14.2551 5.9646 14.5465C6.19946 14.9791 6.45435 15.3605 6.72314 15.6858C5.78589 15.3657 4.93689 14.8536 4.22302 14.1969C4.63 13.9789 5.06897 13.7893 5.53064 13.631ZM12.0354 14.5465C12.1936 14.2551 12.3384 13.9491 12.4694 13.631C12.931 13.7893 13.3699 13.9789 13.7771 14.1969C13.0631 14.8536 12.2141 15.3657 11.2769 15.6858C11.5457 15.3605 11.8005 14.9792 12.0354 14.5465ZM12.7865 12.7499C13.1064 11.7263 13.2946 10.6105 13.3351 9.46875H16.0465C15.9462 10.9923 15.3611 12.3856 14.4436 13.4948C13.9344 13.2028 13.3768 12.953 12.7865 12.7499ZM13.3351 8.53125C13.2946 7.3894 13.1064 6.27368 12.7865 5.25012C13.3768 5.047 13.9344 4.79724 14.4436 4.50525C15.3611 5.61438 15.9462 7.00769 16.0465 8.53125H13.3351Z"
+                                    stroke-width="0.2"></path>
+                            </svg></span>
+                        English</a>
+                    <a href="#" data-toggle="modal" data-target="#footerCurrency">$USD</a>
+                    <a href="">
+                        <span class="accessibility--icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="15.5" fill="white" stroke="currentColor"
+                                    class="circle-wrapper">
+                                </circle>
+                                <path
+                                    d="M16 11.5833C17.1506 11.5833 18.0834 10.6506 18.0834 9.49999C18.0834 8.3494 17.1506 7.41666 16 7.41666C14.8494 7.41666 13.9167 8.3494 13.9167 9.49999C13.9167 10.6506 14.8494 11.5833 16 11.5833Z">
+                                </path>
+                                <path
+                                    d="M23.9167 12.4167H8.08333C7.86232 12.4167 7.65036 12.5045 7.49408 12.6607C7.3378 12.817 7.25 13.029 7.25 13.25C7.25 13.471 7.3378 13.683 7.49408 13.8392C7.65036 13.9955 7.86232 14.0833 8.08333 14.0833H13.5V25.5417C13.5 25.8179 13.6097 26.0829 13.8051 26.2782C14.0004 26.4736 14.2654 26.5833 14.5417 26.5833C14.8179 26.5833 15.0829 26.4736 15.2782 26.2782C15.4736 26.0829 15.5833 25.8179 15.5833 25.5417V19.5H16.4167V25.5417C16.4167 25.8179 16.5264 26.0829 16.7218 26.2782C16.9171 26.4736 17.1821 26.5833 17.4583 26.5833C17.7346 26.5833 17.9996 26.4736 18.1949 26.2782C18.3903 26.0829 18.5 25.8179 18.5 25.5417V14.0833H23.9167C24.1377 14.0833 24.3496 13.9955 24.5059 13.8392C24.6622 13.683 24.75 13.471 24.75 13.25C24.75 13.029 24.6622 12.817 24.5059 12.6607C24.3496 12.5045 24.1377 12.4167 23.9167 12.4167Z">
+                                </path>
+                            </svg>
+                        </span>
+
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+
+    <!-- Signin Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModal__label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModal__label">Sign In to Fiverr
+                    </h5>
+
+                </div>
+                <div class="modal-body">
+                    <div class="header__socialSigning">
+                        <button type="button" class="button--fb">
+                            <i class="fab fa-facebook"></i>
+                            <p>Continue with Facebook</p>
+                        </button>
+                        <button type="button" class="button--social">
+                            <i class="fab fa-google"></i>
+                            <p>Continue with Google</p>
+                        </button>
+                        <button type="button" class="button--social">
+                            <i class="fab fa-apple"></i>
+                            <p>Continue with Apple</p>
+                        </button>
+                        <div class="form--separator"><span>or</span></div>
+                    </div>
+
+                    <div class="header__sociallForm">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email / Username" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn button--green">Continue</button>
+                        </form>
+                    </div>
+
+
+                    <div class="header__forfotPassword">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember
+                                Me</label>
+                        </div>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p>Not a member yet? </p>
+                    <a href="#">Join now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Modal -->
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinInModal__label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinInModal__label">Join Fiverr
+                    </h5>
+
+                </div>
+                <div class="modal-body">
+                    <div class="header__socialSigning">
+                        <button type="button" class=" button--fb">
+                            <i class="fab fa-facebook"></i>
+                            <p>Continue with Facebook</p>
+                        </button>
+                        <button type="button" class="button--social"><i class="fab fa-google"></i>
+                            <p>Continue with Google</p>
+                        </button>
+                        <button type="button" class="button--social"><i class="fab fa-apple"></i>
+                            <p>Continue with Apple</p>
+                        </button>
+                        <div class="form--separator"><span>or</span></div>
+                    </div>
+
+                    <div class="header__sociallForm">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your email" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+
+                            <button type="submit" class="btn button--green">Continue</button>
+                            <p class="disclaimer">By joining I agree to receive emails
+                                from Fiverr.</p>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Already a member?</p>
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selling Modal -->
+    <div class="modal fade" id="sellingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <video id="htmlVideo" width="100%" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
+                            type="video/mp4">
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
+                            type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Feedback Modal 1 -->
+    <div class="modal fade" id="feedbackModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <video id="htmlVideo1" width="100%" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw"
+                            type="video/mp4">
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw"
+                            type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Feedback Modal 2 -->
+    <div class="modal fade" id="feedbackModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <video id="htmlVideo2" width="100%" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/rb8jtakrisiz0xtsffwi"
+                            type="video/mp4">
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/rb8jtakrisiz0xtsffwi"
+                            type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal 3 -->
+    <div class="modal fade" id="feedbackModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <video id="htmlVideo3" width="100%" controls>
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/bsncmkwya3nectkensun"
+                            type="video/mp4">
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/bsncmkwya3nectkensun"
+                            type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Footer Language-->
+    <div class="modal fade " id="footerLanguage" tabindex="-1" aria-labelledby="footerLanguageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="footerLanguageLabel">Choose a language
+
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="dropdown-item icon--selected" href="#">
+                        <span class="icon--check"><i class="fa fa-check"></i></span>English</a>
+                    <a class="dropdown-item item--row" href="#">Deutsch</a>
+                    <a class="dropdown-item item--row" href="#">Español</a>
+                    <a class="dropdown-item item--row" href="#">Français</a>
+                    <a class="dropdown-item item--row" href="#">Português</a>
+                    <a class="dropdown-item item--row" href="#">Italiano</a>
+                    <a class="dropdown-item item--row" href="#">Nederlands</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Footer Currency-->
+    <div class="modal fade " id="footerCurrency" tabindex="-1" aria-labelledby="footerCurrencyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="footerCurrencyLabel">Choose a currency</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="dropdown-item icon--selected" href="#"><span class="icon--check"><i
+                                class="fa fa-check"></i></span>United States Dollar (USD) - $</a>
+                    <a class="dropdown-item item--row" href="#">Euro (EUR) - €</a>
+                    <a class="dropdown-item item--row" href="#">British Pound (GBP) - £</a>
+                    <a class="dropdown-item item--row" href="#">Australian Dollar (AUD) - A$</a>
+                    <a class="dropdown-item item--row" href="#">Canadian Dollar (CAD) - C$</a>
+                    <a class="dropdown-item item--row" href="#">Israeli Shekel (ILS) - ₪</a>
+                    <a class="dropdown-item item--row" href="#">Brazilian Real (BRL) - R$</a>
+                    <a class="dropdown-item item--row" href="#">Hong Kong Dollar (HKD) - HK$</a>
+                    <a class="dropdown-item item--row" href="#">Swedish Krona (SEK) - kr</a>
+                    <a class="dropdown-item item--row" href="#">New Zealand Dollar (NZD) - NZ$</a>
+                    <a class="dropdown-item item--row" href="#">Singapore Dollar (SGD) - S$</a>
+                    <a class="dropdown-item item--row" href="#">Swiss Franc (CHF) - CHF</a>
+                    <a class="dropdown-item item--row" href="#">South African Rand (ZAR) - R</a>
+                    <a class="dropdown-item item--row" href="#">Chinese Renminbi Yuan (CNY) - ¥</a>
+                    <a class="dropdown-item item--row" href="#">Indian Rupee (INR) - ₹</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
+        integrity="sha512-cEgdeh0IWe1pUYypx4mYPjDxGB/tyIORwjxzKrnoxcif2ZxI7fw81pZWV0lGnPWLrfIHGA7qc964MnRjyCYmEQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap E js -->
+    <script src="./js/bootstrap-essentials.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.js"></script>
+    <script>
+        $('.service__carousel').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            smartSpeed: 100,
+            responsive: {
+                0: {
+                    items: 1,
+                    slideBy: 1
+                },
+                600: {
+                    items: 2,
+                    slideBy: 2
+                },
+                800: {
+                    items: 3,
+                    slideBy: 3
+                },
+                1060: {
+                    items: 4,
+                    slideBy: 4
+                },
+                1240: {
+                    items: 5,
+                    slideBy: 5
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('.feedback__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('.project__carousel').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            smartSpeed: 100,
+            responsive: {
+                0: {
+                    items: 1,
+                    slideBy: 1
+                },
+                600: {
+                    items: 2,
+                    slideBy: 2
+                },
+                800: {
+                    items: 3,
+                    slideBy: 3
+                },
+                1060: {
+                    items: 4,
+                    slideBy: 4
+                }
+            }
+        })
+    </script>
+
+
+    <!-- Res nav -->
+
+
+    <!-- Modal -->
+    <script>
+        $(document).ready(function () {
+            $('#youtubeVideo').on('hidden.bs.modal', function () {
+                var $this = $(this).find('iframe'),
+                    tempSrc = $this.attr('src');
+                $this.attr('src', "");
+                $this.attr('src', tempSrc);
+            });
+
+            $('#sellingModal').on('hidden.bs.modal', function () {
+                var html5Video = document.getElementById("htmlVideo");
+                if (html5Video != null) {
+                    html5Video.pause();
+                    html5Video.currentTime = 0;
+                }
+            });
+            $('#feedbackModal1').on('hidden.bs.modal', function () {
+                var html5Video = document.getElementById("htmlVideo1");
+                if (html5Video != null) {
+                    html5Video.pause();
+                    html5Video.currentTime = 0;
+                }
+            });
+            $('#feedbackModal2').on('hidden.bs.modal', function () {
+                var html5Video = document.getElementById("htmlVideo2");
+                if (html5Video != null) {
+                    html5Video.pause();
+                    html5Video.currentTime = 0;
+                }
+            });
+            $('#feedbackModal3').on('hidden.bs.modal', function () {
+                var html5Video = document.getElementById("htmlVideo3");
+                if (html5Video != null) {
+                    html5Video.pause();
+                    html5Video.currentTime = 0;
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Main JS -->
+    <script>
+        window.onscroll = function () {
+            var stiker = document.querySelector('.header');
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+                stiker.classList.add('stickyHeader');
+                // document.getElementById("headerSticky").style.transform = "translateY(0)";
+            } else {
+                // document.getElementById("headerSticky").style.transform = "translateY(-100%)"
+                stiker.classList.remove('stickyHeader');
+            }
+
+            var stikerC = document.querySelector('.header__categories');
+            if (document.body.scrollTop > 320 || document.documentElement.scrollTop > 320) {
+                stikerC.classList.add('stickyHeaderCategories');
+            }
+            else {
+                stikerC.classList.remove('stickyHeaderCategories');
+            }
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

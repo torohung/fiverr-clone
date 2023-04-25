@@ -1,0 +1,36 @@
+.button--green {
+    @include styleButton($color-white-0,$color-green-0,$fs-1,$fw-2,$color-green-0,$br-1);
+    padding: $pd-0+2 $pd-1+4;     
+    &:hover {
+        @include styleButtonHover($color-white-0,$color-green-1);
+    }
+}
+
+.button--white {
+    @include styleButton($color-blue-1,$color-white-0,$fs-1,$fw-2,$color-blue-1,$br-1);
+    padding: $pd-0+2 $pd-1+4; 
+    &:hover {
+        @include styleButtonHover($color-blue-0, $color-gray-4);
+    }
+}
+
+.button--social {
+    @include styleButton($color-gray-0,$color-white-0,$fs-1,$fw-2,$color-white-2,$br-1);      
+    i {
+        @include textStyle($color-black-0, $fs-2, $fw-0);
+    }
+    &:hover{
+        @include styleButtonHover($color-gray-0,$color-white-4)
+    }
+}
+
+.button--fb{
+    @include styleButton($color-white-0,$color-blue-2,$fs-1,$fw-2,$color-blue-2,$br-1);
+    i{
+        color: $color-white-0;
+    }
+    &:hover{
+        @include styleButtonHover($color-white-0,$color-blue-2);
+        opacity: .9;
+    }
+}

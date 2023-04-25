@@ -1,0 +1,91 @@
+.business {
+    background-color: $color-blue-3;
+    color: $color-white-0;
+    margin-bottom: $mg-7;
+    
+    padding: $pd-1+4 0;
+    .business__content {
+        display: flex;
+        .business__left {
+            
+            .text--logomaker1 {
+                @include textLogomaker1($fs-4 + 1, $fw-3, $pd-2 + 2);
+                display: flex;
+                align-items: center;
+                .text--logomaker2 {
+                    @include textLogomaker2($fw-1, $mg-0);
+                }
+                .text--upper {
+                    @include textUpper(
+                        ($fs-0)-4,
+                        $fw-3,
+                        $line-height-0,
+                        $color-purple-0,
+                        ($pd-0)-7,
+                        ($pd-0)-3,
+                        ($pd-0)-8,
+                        $br-999
+                    );
+                }
+            }
+            h2 {
+                @include textStyle(null,$fs-4+4,$fw-3);
+                // max-width: 450px;
+                padding-bottom: $pd-1 + 4;
+            }
+            
+            .business--text3 {
+                @include textStyle(null, $fs-2, $fw-0);
+                line-height: $line-height-5;
+                padding-bottom: $pd-2 + 2;
+                max-width: 450px;
+            }
+            .business__item {
+                padding-bottom: $pd-3 + 8;
+                p {
+                    display: flex;
+                }
+                i {
+                    @include textStyle($color-gray-1, $fs-3 + 2, $fw-0);
+                    margin-right: $mg-1;
+                }
+            }
+            
+        }
+        .business__right{
+            img{
+                width: 100%;
+                margin-top: $mg-3+2;
+            }
+        }
+        
+    }
+}
+
+
+@include responsive("sm"){
+    .business{
+        .business__content{
+            .business__left{
+                h2{
+                    font-size: $fs-6;
+                }
+            }
+        }
+    }
+}
+
+@include responsive ("md"){
+    .business{
+        .business__content{
+            .business__left{
+                padding-right: 5%;
+            }
+        }
+    }
+}
+@include responsive ("lg"){
+    .business{
+        padding: $pd-7 0;
+    }
+}

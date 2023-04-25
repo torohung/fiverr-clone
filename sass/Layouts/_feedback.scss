@@ -1,0 +1,84 @@
+.feedback {
+    margin-bottom: $mg-4;
+    .feedback__content {
+        .feedback__item {
+            display: flex;
+            .feedback__itemRight {
+                padding: $pd-1 + 4 0;
+                max-width: 707px;
+                .feedback__author {
+                    display: block;
+                    align-items: center;
+                    padding-bottom: $pd-0 + 6;
+                    .feedback__authorName {
+                        @include textStyle($color-gray-1, $fs-2, $fw-0);
+                        margin-right: $mg-1 + 6;
+                        padding-right: $pd-0 + 6;
+                    }
+                    img.feedback__companyLogo {
+                        height: 36px;
+                        width: auto;
+                    }
+                }
+                .feedback_quote {
+                    font-size: $fs-4;
+                    line-height: $line-height-5 + 10;
+                    font-weight: $fw-0;
+                    font-family: domainedisplay, helvetica neue, Helvetica, Arial, sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("sm") {
+    .feedback {
+        margin-bottom: $mg-7;
+        .feedback__content {
+            .feedback__item {
+                .feedback__itemRight {
+                    .feedback__author {
+                        .feedback__authorName {
+                            font-size: $fs-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and  (min-width:768px){
+    .feedback {
+        .feedback__content {
+            .feedback__item {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+@include responsive("lg") {
+    .feedback {
+        .feedback__content {
+            .feedback__item {
+                .feedback__itemRight {
+                    padding: 0 48px 0 34px !important;
+                    .feedback__author {
+                         display: flex;
+                        .feedback__authorName {
+                           border-right: 1px solid $color-white-3;
+                          
+                        }
+                        
+                    }
+                    .feedback_quote {
+                        font-size: $fs-5;
+                        line-height: $line-height-7+5;
+                        font-weight: $fw-1;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

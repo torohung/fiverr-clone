@@ -1,0 +1,58 @@
+// text style
+@mixin textStyle($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// Style button
+@mixin styleButton($color, $bg-color, $fs, $fw, $border-color, $border-radius) {
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    font-weight: $fw;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    transition: 0.15s ease-in-out;
+    line-height: 100%;
+}
+
+// Style button hover
+@mixin styleButtonHover($color, $bg-color) {
+    color: $color;
+    background: $bg-color;
+}
+
+// Text Logomaker
+@mixin textUpper($fs, $fw, $line-height, $bg-color, $pt, $py, $pb, $b-radius) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $line-height;
+    background-color: $bg-color;
+    padding: $pt $py $pb;
+    border-radius: $b-radius;
+}
+
+@mixin textLogomaker1($fs, $fw, $pd) {
+    font-size: $fs;
+    font-weight: $fw;
+    padding-bottom: $pd;
+}
+
+@mixin textLogomaker2($fs, $mg) {
+    font-size: $fs;
+    margin: 0px $mg;
+}
+
+//Responsive
+@mixin responsive($screen) {
+    @if map-has-key($map: $breakpoint, $key:$screen ){
+        $value: map-get($map: $breakpoint, $key: $screen);
+        @media only screen and (min-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn "`{$screen}` isn't exist";
+    }
+}

@@ -1,0 +1,66 @@
+.bannerSignUp {
+    .bannerSignUp__content {
+        // padding: $pd-8 $pd-7;
+        padding: $pd-3+8 $pd-1+4;
+        position: relative;
+        display: flex;
+        background: $color-braun-0;
+        .bannerSignUp__img,.bannerSignUp__img2 {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+          
+        }
+        .bannerSignUp__text {
+            z-index: 5;
+            h2 {
+                @include textStyle ($color-white-0, $fs-6, $fw-3);
+                max-width: 650px;
+                padding-bottom: $pd-3;
+                line-height: $line-height-7;
+            }
+        }
+    }
+}
+@include responsive("sm"){
+    .bannerSignUp {
+        margin-bottom: $mg-7;
+    }
+}
+@include responsive("md"){
+    .bannerSignUp {
+        .bannerSignUp__content {
+         
+            padding: $pd-6+10 $pd-2+2 ;
+            .bannerSignUp__img {
+                display: block;
+               
+            }
+            .bannerSignUp__text {
+               
+                h2 {
+                   font-size: $fs-8;
+                    line-height: $line-height-7+9;
+                }
+            }
+        }
+    }
+}
+@include responsive("lg"){
+    .bannerSignUp {
+        .bannerSignUp__content {
+            padding: $pd-8 $pd-7;
+           
+            .bannerSignUp__img {
+                display: none;
+            }
+            .bannerSignUp__img2 {
+                display: block;
+            }
+          
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.project {
+    background-color: $color-white-5;
+    .project__content {
+        position: relative;
+        
+        h2 {
+            @include textStyle($color-black-2, $fs-6, $fw-3);
+            padding-bottom: $pd-1 + 4;
+        }
+        
+        .project__img {
+            height: 237px;
+            width: 100%;
+            border-radius: $br-1 $br-1 0 0;
+            transition: opacity .3s;
+            &:hover{
+                opacity: .85;
+            }
+        }
+        .project__info {
+            display: flex;
+            padding: $pd-0 + 6 0 $pd-0 + 2 $pd-0 + 6;
+            .project__avata {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+            .project__seller {
+                font-size: $fs-0;
+                line-height: $line-height-3 + 1;
+                padding-left: $pd-0 + 2;
+                width: 100%;
+                p {
+                    margin: 0;  
+                }
+                a{
+                    text-decoration: none;
+                    &:first-of-type {
+                        color: $color-black-2;
+                    }
+                    &:last-of-type {
+                        color: $color-gray-2;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include responsive("sm"){
+    .project{
+      margin-bottom: $mg-7;
+    }
+}
+@include responsive("md"){
+    .project{
+        .project__content{
+            h2{
+                padding-right: 180px;
+            }
+        }
+    }
+}

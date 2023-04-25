@@ -1,0 +1,167 @@
+.max-width-container {
+    max-width: 1400px;
+    padding: 24px 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.owl-carousel {
+    .owl-nav {
+        button {
+            &.owl-prev,
+            &.owl-next {
+                color: $color-black-1;
+                background-color: $color-white-0;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                font-size: $fs-7;
+                position: absolute;
+                top: 15%;
+
+                &:hover {
+                    background-color: $color-white-0;
+                    color: $color-black-1;
+                }
+            }
+            &.owl-prev {
+                left: -30px;
+            }
+            &.owl-next {
+                right: -30px;
+            }
+        }
+    }
+}
+
+.picture--wrapper {
+    position: relative;
+    cursor: pointer;
+    border-radius: $br-1;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background: url("../../img/desktop-play-button.c1196d6.png") no-repeat;
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.icon--globe {
+    width: 16px;
+    height: 16px;
+    fill: $color-white-0;
+}
+.icon--globe--footer {
+    width: 16px;
+    height: 16px;
+    fill: $color-gray-1;
+}
+
+.icon--check {
+    margin-right: $mg-1 + 6;
+    font-size: 10px;
+}
+.icon--selected {
+    padding: ($pd-0)-1 $pd-3 + 6 ($pd-0)-1 $pd-1;
+}
+.item--row {
+    padding: ($pd-0)-1 $pd-3 + 6;
+}
+.scrollable--menu {
+    height: auto;
+    min-width: 224px;
+    max-height: 318px;
+    overflow: auto;
+}
+.form--separator {
+    height: ($line-height-0)-2;
+    margin: $mg-1 0 $mg-3 + 2;
+    text-align: center;
+    border-bottom: 1px solid $color-white-2;
+    span {
+        @include textStyle($color-gray-0, $fs-0, $fw-2);
+        line-height: $line-height-4;
+        text-transform: uppercase;
+        padding: 0 ($pd-0)-2;
+        background-color: $color-white-0;
+    }
+}
+
+.font--domaine {
+    font-family: domainedisplay, helvetica neue, Helvetica, Arial, sans-serif;
+    font-weight: $fw-1;
+}
+
+.see--more--link {
+    display: block;
+    color: $color-blue-1;
+    &:hover {
+        text-decoration: none;
+        color: $color-blue-1;
+    }
+    i {
+        font-size: ($fs-0)-3;
+        padding-left: ($pd-0)-5;
+    }
+}
+.accessibility--icon {
+    fill: $color-gray-1;
+}
+
+@include responsive("sm"){
+    .max-width-container {
+        width: 90%;
+        padding: 0; 
+   }
+   .owl-carousel {
+    .owl-nav {
+        button {
+            &.owl-prev,
+            &.owl-next {
+                top: 20%;
+            }
+        }
+    }
+}
+}
+
+@include responsive("md-0"){
+   .owl-carousel {
+    .owl-nav {
+        button {
+            &.owl-prev,
+            &.owl-next {
+                top: 40%;
+            }
+        }
+    }
+}
+}
+
+@include responsive("md"){
+    .max-width-container {
+        width: 95%;
+        padding: 0; 
+   }
+   .see--more--link {
+    position: absolute;
+    top: 0;
+    right: 0;
+   }
+   
+}
+@include responsive("xl"){
+    .max-width-container {
+        width: 80%;
+        padding: 0; 
+   }
+}
+

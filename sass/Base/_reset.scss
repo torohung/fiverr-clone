@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: macan;
+    src: url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-light-4b09136b4199e66422da5bb6915a2bb8.eot);
+    src: local("Macan-Light"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-light-4b09136b4199e66422da5bb6915a2bb8.eot?#iefix)
+            format("embedded-opentype"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-light-19099f37b34f66ccafb23f4ec6ec385d.woff2)
+            format("woff2"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-light-791b7b412b4e2a3dabdd3b6216674f35.woff)
+            format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: macan;
+    src: url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-811b15fc3e56f5e18a0dc8514d9b8b29.eot);
+    src: local("Macan-Regular"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-811b15fc3e56f5e18a0dc8514d9b8b29.eot?#iefix)
+            format("embedded-opentype"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-933670febf2bb63ce33fc050f972a318.woff2)
+            format("woff2"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-49725a75af8ee2dc9a123910570fc6b5.woff)
+            format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: macan;
+    src: url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-semibold-dd9b5673e2a27179bf9eeec04d2e2b43.eot);
+    src: local("Macan-Semibold"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-semibold-dd9b5673e2a27179bf9eeec04d2e2b43.eot?#iefix)
+            format("embedded-opentype"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-semibold-fd1f3d2734b388a6e96a00c785ad4119.woff2)
+            format("woff2"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-semibold-9e312cc7a9c8e52800534aafa4f7f09a.woff)
+            format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: macan;
+    src: url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-bold-ed2d98c1dd960cd7d7246a594b728e66.eot);
+    src: local("Macan-Bold"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-bold-ed2d98c1dd960cd7d7246a594b728e66.eot?#iefix)
+            format("embedded-opentype"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-bold-3b02b257d94f18abd7fb58d6c43b7924.woff2)
+            format("woff2"),
+        url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-bold-eaa5e0e4fa72f91b6310a4b7d2d5d4bf.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: $fs-1;
+    background-color: $color-white-0;
+}

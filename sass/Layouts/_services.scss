@@ -1,0 +1,45 @@
+.serviceSection {
+   
+    .service__content {
+        h2 {
+            @include textStyle($color-black-2, $fs-6, $fw-3);
+            padding-bottom: $pd-1 + 4;
+        }
+        .item{
+            cursor: pointer;
+            img {
+                height: 345px;
+                width: 100%;
+                border-radius: 4px;
+                transition: opacity .3s;
+                object-fit: cover;
+                &:hover{
+                    opacity: .85;
+                }
+            }
+            .service__text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: $pd-0+6;
+                p{
+                    margin: 0;
+                }
+                .service__subTitle{
+                    @include textStyle($color-white-0,$fs-0,$fw-0);
+                }
+                .service__title{
+                    @include textStyle($color-white-0,$fs-3,$fw-3);
+
+                }
+            }
+        }
+    }
+}
+@include responsive("sm"){
+    .serviceSection{
+        margin-bottom: $mg-7;
+    }
+     
+}
