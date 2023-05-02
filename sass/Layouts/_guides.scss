@@ -1,10 +1,12 @@
 .guides {
-    background-color: $color-white-5;
-    
     position: relative;
-    h2 {
-        @include textStyle($color-black-2, $fs-6, $fw-3);
-        padding-bottom: $pd-1 + 4;
+    .guides__title {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            @include textStyle($color-black-2, $fs-6, $fw-3);
+            padding-bottom: $pd-1 + 4;
+        }
     }
     .guides__content {
         .guides__item {
@@ -29,15 +31,14 @@
                 }
             }
             a {
-                &:hover {
-                    text-decoration: none;
-                }
+                text-decoration: none;
+                
             }
         }
     }
 }
-@include responsive("sm"){
-    .guides{
- margin-bottom: $mg-7;
+@include responsive("sm") {
+    .guides {
+        margin-bottom: $mg-7;
     }
 }

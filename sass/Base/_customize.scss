@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.navbar-toggler{
+    border: none;
+}
+
 
 .owl-carousel {
     .owl-nav {
@@ -103,10 +107,7 @@
 .see--more--link {
     display: block;
     color: $color-blue-1;
-    &:hover {
-        text-decoration: none;
-        color: $color-blue-1;
-    }
+    text-decoration: none;
     i {
         font-size: ($fs-0)-3;
         padding-left: ($pd-0)-5;
@@ -115,34 +116,29 @@
 .accessibility--icon {
     fill: $color-gray-1;
 }
-
+@media (max-width: 599px) {
+        
+    .icon--globe {
+        
+        fill: $color-black-0;
+    }
+        
+}
+.owl-carousel {
+ .owl-nav {
+     button {
+         &.owl-prev,
+         &.owl-next {
+             top: 40%;
+             box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+         }
+     }
+ }
 @include responsive("sm"){
     .max-width-container {
         width: 90%;
         padding: 0; 
    }
-   .owl-carousel {
-    .owl-nav {
-        button {
-            &.owl-prev,
-            &.owl-next {
-                top: 20%;
-            }
-        }
-    }
-}
-}
-
-@include responsive("md-0"){
-   .owl-carousel {
-    .owl-nav {
-        button {
-            &.owl-prev,
-            &.owl-next {
-                top: 40%;
-            }
-        }
-    }
 }
 }
 
@@ -151,11 +147,7 @@
         width: 95%;
         padding: 0; 
    }
-   .see--more--link {
-    position: absolute;
-    top: 0;
-    right: 0;
-   }
+
    
 }
 @include responsive("xl"){
@@ -164,4 +156,5 @@
         padding: 0; 
    }
 }
+
 

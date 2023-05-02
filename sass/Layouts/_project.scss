@@ -2,10 +2,14 @@
     background-color: $color-white-5;
     .project__content {
         position: relative;
-        
-        h2 {
-            @include textStyle($color-black-2, $fs-6, $fw-3);
-            padding-bottom: $pd-1 + 4;
+        padding: 96px 0;
+        .project__title{
+        display: flex;
+        justify-content: space-between;
+            h2 {
+                @include textStyle($color-black-2, $fs-6, $fw-3);
+                padding-bottom: $pd-1 + 4;
+            }
         }
         
         .project__img {
@@ -20,6 +24,7 @@
         .project__info {
             display: flex;
             padding: $pd-0 + 6 0 $pd-0 + 2 $pd-0 + 6;
+            background-color: $color-white-0;
             .project__avata {
                 height: 40px;
                 width: 40px;

@@ -11,9 +11,14 @@
             .titel {
                 @include textStyle($color-black-2, $fs-1, $fw-3);
             }
+            a{
+                text-decoration-line: none;
+            }
             ul {
                 list-style: none;
                 list-style-image: none;
+                padding-left: 0;
+                
                 li:not(:last-child) {
                     padding-bottom: $pd-0 + 6;
                 }
