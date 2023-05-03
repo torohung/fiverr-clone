@@ -105,9 +105,13 @@
 }
 
 .see--more--link {
-    display: block;
     color: $color-blue-1;
     text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    // flex-wrap: nowrap;
+    // width: 80px;
     i {
         font-size: ($fs-0)-3;
         padding-left: ($pd-0)-5;

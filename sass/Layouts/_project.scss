@@ -2,23 +2,24 @@
     background-color: $color-white-5;
     .project__content {
         position: relative;
-        padding: 96px 0;
-        .project__title{
-        display: flex;
-        justify-content: space-between;
+        padding: 24px 24px;
+        .project__title {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: $pd-1 + 4;
             h2 {
                 @include textStyle($color-black-2, $fs-6, $fw-3);
-                padding-bottom: $pd-1 + 4;
+                // padding-right: 30px;
             }
         }
-        
+
         .project__img {
             height: 237px;
             width: 100%;
             border-radius: $br-1 $br-1 0 0;
-            transition: opacity .3s;
-            &:hover{
-                opacity: .85;
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.85;
             }
         }
         .project__info {
@@ -36,9 +37,9 @@
                 padding-left: $pd-0 + 2;
                 width: 100%;
                 p {
-                    margin: 0;  
+                    margin: 0;
                 }
-                a{
+                a {
                     text-decoration: none;
                     &:first-of-type {
                         color: $color-black-2;
@@ -47,23 +48,27 @@
                         color: $color-gray-2;
                     }
                 }
-
             }
         }
     }
 }
 
-@include responsive("sm"){
-    .project{
-      margin-bottom: $mg-7;
+@include responsive("sm") {
+    .project {
+        margin-bottom: $mg-7;
     }
 }
-@include responsive("md"){
-    .project{
-        .project__content{
-            h2{
-                padding-right: 180px;
+
+@media (max-width: 599px) {
+    .project {
+        .project__content {
+            .project__title {
+                h2 {
+                    font-size: $fs-4;
+                }
             }
         }
     }
+}
+@include responsive("md") {
 }
